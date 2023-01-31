@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 .cards {
     width: 900px;
     height: 500px;
@@ -41,8 +32,8 @@
     position: absolute;
     font-family: 'Lexend Deca', sans-serif;
     text-decoration: none;
+    border: solid;
     border-radius: 30px;
-    border-style: solid;
 }
 
 .cards a:hover {
@@ -68,7 +59,6 @@
 
 .suvs a {
     color: hsl(184, 100%, 22%);
-
 }
 
 .luxury {
@@ -79,31 +69,52 @@
 
 .luxury a {
     color: hsl(179, 100%, 13%);
-
 }
 
 .description {
     padding: 14px 48px;
 }
 
-svg {
+.logo {
     padding: 48px 48px 14px;
 }
 
-@media (max-width: 375px) {
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
+
+@media (max-width: 425px) {
     .cards {
         display: block;
-        width: 350px;
-        margin: auto;
+        width: 95%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        position: unset;
+        height: unset;
     }
 
-    .responsive-card{
-        height: 500px;
+    .responsive-card {
+        height: 440px;
+        border-radius: 0px;
     }
 
-    .responsive-card a{
+    .responsive-card a {
         position: relative;
-        top: 30px;
+        top: 50px;
     }
 
+    .sedans {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
 }
